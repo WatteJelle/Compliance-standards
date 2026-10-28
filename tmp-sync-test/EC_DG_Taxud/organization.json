@@ -1,0 +1,21 @@
+{
+  "component_type": "regulatory_body",
+  "exported_at": "2026-10-28T15:41:29.980Z",
+  "organization": {
+    "organization_name": "EC DG Taxud",
+    "role": "policy body",
+    "legal_structure": "",
+    "organization_url": "",
+    "email": "",
+    "phone_number": "",
+    "jurisdiction_country_codes": []
+  },
+  "regulations": [
+    {
+      "celex_number": "32013R0952",
+      "identifier": "UCC",
+      "title": "Union Customs Code",
+      "status": "In force"
+    }
+  ]
+}
