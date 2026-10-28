@@ -1,0 +1,21 @@
+{
+  "component_type": "regulatory_body",
+  "exported_at": "2026-10-28T15:46:44.305Z",
+  "organization": {
+    "organization_name": "EC DG Move",
+    "role": "policy body",
+    "legal_structure": "",
+    "organization_url": "",
+    "email": "",
+    "phone_number": "",
+    "jurisdiction_country_codes": []
+  },
+  "regulations": [
+    {
+      "celex_number": "32020R1056",
+      "identifier": "2020/1056",
+      "title": "Regulation (eu) 2020/1056 of the European Parliament and Council on electronic freight transport information (eFTI)",
+      "status": "In force"
+    }
+  ]
+}
