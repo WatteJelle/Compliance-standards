@@ -1,0 +1,34 @@
+{
+  "component_type": "data_sharing_service",
+  "exported_at": "2026-10-28T15:41:29.980Z",
+  "regulation": {
+    "celex_number": "32013R0952",
+    "identifier": "UCC"
+  },
+  "service": {
+    "iri": "https://hilosemantics.com/Completingexportdeclaration-1774611596593",
+    "namespace_prefix": "hilo",
+    "name": "Completing export declaration",
+    "description": "",
+    "version": "1.0",
+    "type": "data sharing service",
+    "parent_iri": "https://hilosemantics.com/ExportDeclaration-1774448918917",
+    "interaction_type": "collaborate",
+    "initiating_role": "",
+    "creator": "",
+    "creation_date": "",
+    "hierarchy_assoc_ids": [],
+    "selected_property_iris": [],
+    "selected_code_iris": [],
+    "alignments": [
+      {
+        "type": "owl:sameAs",
+        "target_uri": "https://hilosemantics.com/DataSharingService",
+        "target_class": "https://hilosemantics.com/DataSharingService"
+      }
+    ]
+  },
+  "states": [],
+  "state_transitions": [],
+  "data_sharing_events": []
+}
