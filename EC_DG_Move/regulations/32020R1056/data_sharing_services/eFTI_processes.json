@@ -1,0 +1,304 @@
+{
+  "component_type": "data_sharing_service",
+  "exported_at": "2026-10-28T15:46:44.305Z",
+  "regulation": {
+    "celex_number": "32020R1056",
+    "identifier": "2020/1056"
+  },
+  "service": {
+    "iri": "https://hilosemantics.com/eFTIprocesses-1773306219218",
+    "namespace_prefix": "hilo",
+    "name": "eFTI processes",
+    "description": "",
+    "version": "1.0",
+    "type": "data sharing service",
+    "parent_iri": "https://hilosemantics.com/eFTIDatarequirements-1773305659866",
+    "interaction_type": "",
+    "initiating_role": "",
+    "creator": "",
+    "creation_date": "",
+    "hierarchy_assoc_ids": [],
+    "selected_property_iris": [],
+    "selected_code_iris": [],
+    "alignments": [
+      {
+        "type": "owl:sameAs",
+        "target_uri": "https://hilosemantics.com/DataSharingService",
+        "target_class": "https://hilosemantics.com/DataSharingService"
+      }
+    ]
+  },
+  "states": [
+    {
+      "iri": "https://hilosemantics.com/Startmovement-1773327399769",
+      "namespace_prefix": "hilo",
+      "name": "Start movement",
+      "description": "",
+      "version": "1.0",
+      "type": "state",
+      "parent_iri": "https://hilosemantics.com/eFTIprocesses-1773306219218",
+      "interaction_type": "",
+      "initiating_role": "",
+      "creator": "",
+      "creation_date": "",
+      "hierarchy_assoc_ids": [],
+      "selected_property_iris": [],
+      "selected_code_iris": [],
+      "alignments": []
+    },
+    {
+      "iri": "https://hilosemantics.com/Endofmovement-1773327389775",
+      "namespace_prefix": "hilo",
+      "name": "End of movement",
+      "description": "",
+      "version": "1.0",
+      "type": "state",
+      "parent_iri": "https://hilosemantics.com/eFTIprocesses-1773306219218",
+      "interaction_type": "",
+      "initiating_role": "",
+      "creator": "",
+      "creation_date": "",
+      "hierarchy_assoc_ids": [],
+      "selected_property_iris": [],
+      "selected_code_iris": [],
+      "alignments": []
+    },
+    {
+      "iri": "https://hilosemantics.com/Cargoonthemove-1773327364190",
+      "namespace_prefix": "hilo",
+      "name": "Cargo on the move",
+      "description": "",
+      "version": "1.0",
+      "type": "state",
+      "parent_iri": "https://hilosemantics.com/eFTIprocesses-1773306219218",
+      "interaction_type": "",
+      "initiating_role": "",
+      "creator": "",
+      "creation_date": "",
+      "hierarchy_assoc_ids": [],
+      "selected_property_iris": [],
+      "selected_code_iris": [],
+      "alignments": []
+    }
+  ],
+  "state_transitions": [
+    {
+      "name": "Retrieve actual cargo data",
+      "transition_uuid": "9a6db2a6-ece7-4792-9b4d-ca524c749b3e",
+      "role": "",
+      "principal_role": "",
+      "subordinate_role": "",
+      "role_pair": "",
+      "sender_role": "",
+      "input_state": {
+        "metadata_id": "69b2d404f321524f92880f65",
+        "metadata_name": "Cargo on the move",
+        "metadata_iri": "https://hilosemantics.com/Cargoonthemove-1773327364190"
+      },
+      "trigger_event": {
+        "metadata_id": "69b2d46c7e53a27fca7b5c0c",
+        "metadata_name": "Movement data",
+        "metadata_iri": "https://hilosemantics.com/Movementdata-1773327468271"
+      },
+      "trigger_type": "send",
+      "sender_trigger_event": null,
+      "recipient_trigger_event": null,
+      "internal_trigger": null,
+      "pre_condition": "",
+      "pre_condition_conditions": [],
+      "output_state": {
+        "metadata_id": "69b2d404f321524f92880f65",
+        "metadata_name": "Cargo on the move",
+        "metadata_iri": "https://hilosemantics.com/Cargoonthemove-1773327364190"
+      },
+      "warning": "",
+      "firing_rule": "",
+      "post_condition": "",
+      "error": "",
+      "recipient_firing_rule": "",
+      "recipient_post_condition": "",
+      "visualization_order": 0
+    },
+    {
+      "name": "Retrieve data",
+      "transition_uuid": "00fcdc81-a27e-4622-8535-7d19ada0f0de",
+      "role": "",
+      "principal_role": "",
+      "subordinate_role": "",
+      "role_pair": "",
+      "sender_role": "",
+      "input_state": {
+        "metadata_id": "69b2d42708d69ffd0a8807fc",
+        "metadata_name": "Start movement",
+        "metadata_iri": "https://hilosemantics.com/Startmovement-1773327399769"
+      },
+      "trigger_event": {
+        "metadata_id": "69b2d46c7e53a27fca7b5c0c",
+        "metadata_name": "Movement data",
+        "metadata_iri": "https://hilosemantics.com/Movementdata-1773327468271"
+      },
+      "trigger_type": "send",
+      "sender_trigger_event": null,
+      "recipient_trigger_event": null,
+      "internal_trigger": null,
+      "pre_condition": "",
+      "pre_condition_conditions": [],
+      "output_state": {
+        "metadata_id": "69b2d42708d69ffd0a8807fc",
+        "metadata_name": "Start movement",
+        "metadata_iri": "https://hilosemantics.com/Startmovement-1773327399769"
+      },
+      "warning": "",
+      "firing_rule": "",
+      "post_condition": "",
+      "error": "",
+      "recipient_firing_rule": "",
+      "recipient_post_condition": "",
+      "visualization_order": 0
+    },
+    {
+      "name": "Movement complete",
+      "transition_uuid": "cae67e91-b0be-47c2-9036-e2eacce28dee",
+      "role": "",
+      "principal_role": "",
+      "subordinate_role": "",
+      "role_pair": "",
+      "sender_role": "",
+      "input_state": {
+        "metadata_id": "69b2d404f321524f92880f65",
+        "metadata_name": "Cargo on the move",
+        "metadata_iri": "https://hilosemantics.com/Cargoonthemove-1773327364190"
+      },
+      "trigger_event": {
+        "metadata_id": "69b2d4532ab4ef51748adbe6",
+        "metadata_name": "Movement completed",
+        "metadata_iri": "https://hilosemantics.com/Movementcompleted-1773327443524"
+      },
+      "trigger_type": "send",
+      "sender_trigger_event": null,
+      "recipient_trigger_event": null,
+      "internal_trigger": null,
+      "pre_condition": "",
+      "pre_condition_conditions": [],
+      "output_state": {
+        "metadata_id": "69b2d41d441e15db30595d54",
+        "metadata_name": "End of movement",
+        "metadata_iri": "https://hilosemantics.com/Endofmovement-1773327389775"
+      },
+      "warning": "",
+      "firing_rule": "",
+      "post_condition": "",
+      "error": "",
+      "recipient_firing_rule": "",
+      "recipient_post_condition": "",
+      "visualization_order": 0
+    },
+    {
+      "name": "Movement starts",
+      "transition_uuid": "22c56787-e724-4cd6-8717-aa1d692dcc3f",
+      "role": "",
+      "principal_role": "",
+      "subordinate_role": "",
+      "role_pair": "",
+      "sender_role": "",
+      "input_state": {
+        "metadata_id": "69b2d42708d69ffd0a8807fc",
+        "metadata_name": "Start movement",
+        "metadata_iri": "https://hilosemantics.com/Startmovement-1773327399769"
+      },
+      "trigger_event": {
+        "metadata_id": "69b2d3d19ffe0bfcfea5ad3b",
+        "metadata_name": "Movement reporting",
+        "metadata_iri": "https://hilosemantics.com/Movementreporting-1773327313337"
+      },
+      "trigger_type": "send",
+      "sender_trigger_event": null,
+      "recipient_trigger_event": null,
+      "internal_trigger": null,
+      "pre_condition": "",
+      "pre_condition_conditions": [],
+      "output_state": {
+        "metadata_id": "69b2d404f321524f92880f65",
+        "metadata_name": "Cargo on the move",
+        "metadata_iri": "https://hilosemantics.com/Cargoonthemove-1773327364190"
+      },
+      "warning": "",
+      "firing_rule": "",
+      "post_condition": "",
+      "error": "",
+      "recipient_firing_rule": "",
+      "recipient_post_condition": "",
+      "visualization_order": 0
+    }
+  ],
+  "data_sharing_events": [
+    {
+      "iri": "https://hilosemantics.com/Movementdata-1773327468271",
+      "namespace_prefix": "hilo",
+      "name": "Movement data",
+      "description": "",
+      "version": "1.0",
+      "type": "data sharing event",
+      "parent_iri": "https://hilosemantics.com/eFTIprocesses-1773306219218",
+      "interaction_type": "",
+      "initiating_role": "",
+      "creator": "",
+      "creation_date": "",
+      "hierarchy_assoc_ids": [],
+      "selected_property_iris": [],
+      "selected_code_iris": [],
+      "alignments": []
+    },
+    {
+      "iri": "https://hilosemantics.com/Movementcompleted-1773327443524",
+      "namespace_prefix": "hilo",
+      "name": "Movement completed",
+      "description": "",
+      "version": "1.0",
+      "type": "data sharing event",
+      "parent_iri": "https://hilosemantics.com/eFTIprocesses-1773306219218",
+      "interaction_type": "",
+      "initiating_role": "",
+      "creator": "",
+      "creation_date": "",
+      "hierarchy_assoc_ids": [],
+      "selected_property_iris": [],
+      "selected_code_iris": [],
+      "alignments": []
+    },
+    {
+      "iri": "https://hilosemantics.com/Bordercrossing-1773327332053",
+      "namespace_prefix": "hilo",
+      "name": "Border crossing",
+      "description": "",
+      "version": "1.0",
+      "type": "data sharing event",
+      "parent_iri": "https://hilosemantics.com/eFTIprocesses-1773306219218",
+      "interaction_type": "",
+      "initiating_role": "",
+      "creator": "",
+      "creation_date": "",
+      "hierarchy_assoc_ids": [],
+      "selected_property_iris": [],
+      "selected_code_iris": [],
+      "alignments": []
+    },
+    {
+      "iri": "https://hilosemantics.com/Movementreporting-1773327313337",
+      "namespace_prefix": "hilo",
+      "name": "Movement reporting",
+      "description": "",
+      "version": "1.0",
+      "type": "data sharing event",
+      "parent_iri": "https://hilosemantics.com/eFTIprocesses-1773306219218",
+      "interaction_type": "",
+      "initiating_role": "",
+      "creator": "",
+      "creation_date": "",
+      "hierarchy_assoc_ids": [],
+      "selected_property_iris": [],
+      "selected_code_iris": [],
+      "alignments": []
+    }
+  ]
+}
