@@ -1,0 +1,28 @@
+{
+  "component_type": "data_requirements",
+  "exported_at": "2026-10-28T15:46:44.305Z",
+  "regulation": {
+    "celex_number": "32020R1056",
+    "identifier": "2020/1056",
+    "title": "Regulation (eu) 2020/1056 of the European Parliament and Council on electronic freight transport information (eFTI)"
+  },
+  "items": [
+    {
+      "iri": "https://hilosemantics.com/eFTIDatarequirements-1773305659866",
+      "namespace_prefix": "hilo",
+      "name": "eFTI Data requirements",
+      "description": "",
+      "version": "1.0",
+      "type": "business activity",
+      "parent_iri": "urn:regulation:69b27c7729300ce4f69a979a",
+      "interaction_type": "",
+      "initiating_role": "",
+      "creator": "",
+      "creation_date": "",
+      "hierarchy_assoc_ids": [],
+      "selected_property_iris": [],
+      "selected_code_iris": [],
+      "alignments": []
+    }
+  ]
+}
