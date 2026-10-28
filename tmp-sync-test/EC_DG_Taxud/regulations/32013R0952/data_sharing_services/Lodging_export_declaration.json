@@ -1,0 +1,267 @@
+{
+  "component_type": "data_sharing_service",
+  "exported_at": "2026-10-28T15:41:29.980Z",
+  "regulation": {
+    "celex_number": "32013R0952",
+    "identifier": "UCC"
+  },
+  "service": {
+    "iri": "https://hilosemantics.com/Lodgingexportdeclaration-1774611561221",
+    "namespace_prefix": "hilo",
+    "name": "Lodging export declaration",
+    "description": "",
+    "version": "1.0",
+    "type": "data sharing service",
+    "parent_iri": "https://hilosemantics.com/ExportDeclaration-1774448918917",
+    "interaction_type": "collaborate",
+    "initiating_role": "",
+    "creator": "",
+    "creation_date": "",
+    "hierarchy_assoc_ids": [],
+    "selected_property_iris": [],
+    "selected_code_iris": [],
+    "alignments": [
+      {
+        "type": "owl:sameAs",
+        "target_uri": "https://hilosemantics.com/DataSharingService",
+        "target_class": "https://hilosemantics.com/DataSharingService"
+      }
+    ]
+  },
+  "states": [
+    {
+      "iri": "https://hilosemantics.com/Startexportdeclaration-1774611898127",
+      "namespace_prefix": "hilo",
+      "name": "Start export declaration",
+      "description": "",
+      "version": "1.0",
+      "type": "state",
+      "parent_iri": "https://hilosemantics.com/Lodgingexportdeclaration-1774611561221",
+      "interaction_type": "collaborate",
+      "initiating_role": "",
+      "creator": "",
+      "creation_date": "",
+      "hierarchy_assoc_ids": [],
+      "selected_property_iris": [],
+      "selected_code_iris": [],
+      "alignments": []
+    },
+    {
+      "iri": "https://hilosemantics.com/Exportdeclarationaccepted-1774611805481",
+      "namespace_prefix": "hilo",
+      "name": "Export declaration accepted",
+      "description": "",
+      "version": "1.0",
+      "type": "state",
+      "parent_iri": "https://hilosemantics.com/Lodgingexportdeclaration-1774611561221",
+      "interaction_type": "collaborate",
+      "initiating_role": "",
+      "creator": "",
+      "creation_date": "",
+      "hierarchy_assoc_ids": [],
+      "selected_property_iris": [],
+      "selected_code_iris": [],
+      "alignments": []
+    },
+    {
+      "iri": "https://hilosemantics.com/Exportdeclarationlodged-1774611746505",
+      "namespace_prefix": "hilo",
+      "name": "Export declaration lodged",
+      "description": "",
+      "version": "1.0",
+      "type": "state",
+      "parent_iri": "https://hilosemantics.com/Lodgingexportdeclaration-1774611561221",
+      "interaction_type": "collaborate",
+      "initiating_role": "",
+      "creator": "",
+      "creation_date": "",
+      "hierarchy_assoc_ids": [],
+      "selected_property_iris": [],
+      "selected_code_iris": [],
+      "alignments": []
+    },
+    {
+      "iri": "https://hilosemantics.com/Draftexportdeclaration-1774611732060",
+      "namespace_prefix": "hilo",
+      "name": "Draft export declaration",
+      "description": "",
+      "version": "1.0",
+      "type": "state",
+      "parent_iri": "https://hilosemantics.com/Lodgingexportdeclaration-1774611561221",
+      "interaction_type": "collaborate",
+      "initiating_role": "",
+      "creator": "",
+      "creation_date": "",
+      "hierarchy_assoc_ids": [],
+      "selected_property_iris": [],
+      "selected_code_iris": [],
+      "alignments": []
+    }
+  ],
+  "state_transitions": [
+    {
+      "name": "Acceptance of export declaration",
+      "transition_uuid": "5ce4eba2-134d-4fa4-81fd-568f8d32298a",
+      "role": "",
+      "principal_role": "",
+      "subordinate_role": "",
+      "role_pair": "",
+      "sender_role": "",
+      "input_state": {
+        "metadata_id": "69c66d2271d158e1a36c0959",
+        "metadata_name": "Export declaration lodged",
+        "metadata_iri": "https://hilosemantics.com/Exportdeclarationlodged-1774611746505"
+      },
+      "trigger_event": {
+        "metadata_id": "69c66cff423e47a5116c92af",
+        "metadata_name": "IE528 Accept export declaration + MRN",
+        "metadata_iri": "https://hilosemantics.com/IE528Acceptexportdeclaration+MRN-1774611711154"
+      },
+      "trigger_type": "send",
+      "sender_trigger_event": null,
+      "recipient_trigger_event": null,
+      "internal_trigger": null,
+      "pre_condition": "",
+      "pre_condition_conditions": [],
+      "output_state": {
+        "metadata_id": "69c66d5e93d925ba2b60bb48",
+        "metadata_name": "Export declaration accepted",
+        "metadata_iri": "https://hilosemantics.com/Exportdeclarationaccepted-1774611805481"
+      },
+      "warning": "",
+      "firing_rule": "",
+      "post_condition": "",
+      "error": "",
+      "recipient_firing_rule": "",
+      "recipient_post_condition": "",
+      "visualization_order": 0
+    },
+    {
+      "name": "Reject export declaration",
+      "transition_uuid": "e581d450-3604-4983-a6e7-2a27528722df",
+      "role": "",
+      "principal_role": "",
+      "subordinate_role": "",
+      "role_pair": "",
+      "sender_role": "",
+      "input_state": {
+        "metadata_id": "69c66d2271d158e1a36c0959",
+        "metadata_name": "Export declaration lodged",
+        "metadata_iri": "https://hilosemantics.com/Exportdeclarationlodged-1774611746505"
+      },
+      "trigger_event": {
+        "metadata_id": "69c66cda6c0fa016b570ae25",
+        "metadata_name": "IE528 Reject export declaration",
+        "metadata_iri": "https://hilosemantics.com/IE528Rejectexportdeclaration-1774611673993"
+      },
+      "trigger_type": "send",
+      "sender_trigger_event": null,
+      "recipient_trigger_event": null,
+      "internal_trigger": null,
+      "pre_condition": "",
+      "pre_condition_conditions": [],
+      "output_state": {
+        "metadata_id": "69c66dba1c54f826521b0275",
+        "metadata_name": "Start export declaration",
+        "metadata_iri": "https://hilosemantics.com/Startexportdeclaration-1774611898127"
+      },
+      "warning": "",
+      "firing_rule": "",
+      "post_condition": "",
+      "error": "",
+      "recipient_firing_rule": "",
+      "recipient_post_condition": "",
+      "visualization_order": 0
+    },
+    {
+      "name": "Lodge export declaration",
+      "transition_uuid": "3a7d612d-69f9-4e98-8d10-909b4aba7572",
+      "role": "",
+      "principal_role": "",
+      "subordinate_role": "",
+      "role_pair": "",
+      "sender_role": "",
+      "input_state": {
+        "metadata_id": "69c66dba1c54f826521b0275",
+        "metadata_name": "Start export declaration",
+        "metadata_iri": "https://hilosemantics.com/Startexportdeclaration-1774611898127"
+      },
+      "trigger_event": {
+        "metadata_id": "69c66cb0d421e3b2b5b16aa8",
+        "metadata_name": "IE515 Submit declaration ",
+        "metadata_iri": "https://hilosemantics.com/IE515Submitdeclaration-1774611632509"
+      },
+      "trigger_type": "send",
+      "sender_trigger_event": null,
+      "recipient_trigger_event": null,
+      "internal_trigger": null,
+      "pre_condition": "",
+      "pre_condition_conditions": [],
+      "output_state": {
+        "metadata_id": "69c66d2271d158e1a36c0959",
+        "metadata_name": "Export declaration lodged",
+        "metadata_iri": "https://hilosemantics.com/Exportdeclarationlodged-1774611746505"
+      },
+      "warning": "",
+      "firing_rule": "",
+      "post_condition": "",
+      "error": "",
+      "recipient_firing_rule": "",
+      "recipient_post_condition": "",
+      "visualization_order": 0
+    }
+  ],
+  "data_sharing_events": [
+    {
+      "iri": "https://hilosemantics.com/IE528Acceptexportdeclaration+MRN-1774611711154",
+      "namespace_prefix": "hilo",
+      "name": "IE528 Accept export declaration + MRN",
+      "description": "",
+      "version": "1.0",
+      "type": "data sharing event",
+      "parent_iri": "https://hilosemantics.com/Lodgingexportdeclaration-1774611561221",
+      "interaction_type": "collaborate",
+      "initiating_role": "",
+      "creator": "",
+      "creation_date": "",
+      "hierarchy_assoc_ids": [],
+      "selected_property_iris": [],
+      "selected_code_iris": [],
+      "alignments": []
+    },
+    {
+      "iri": "https://hilosemantics.com/IE528Rejectexportdeclaration-1774611673993",
+      "namespace_prefix": "hilo",
+      "name": "IE528 Reject export declaration",
+      "description": "",
+      "version": "1.0",
+      "type": "data sharing event",
+      "parent_iri": "https://hilosemantics.com/Lodgingexportdeclaration-1774611561221",
+      "interaction_type": "collaborate",
+      "initiating_role": "",
+      "creator": "",
+      "creation_date": "",
+      "hierarchy_assoc_ids": [],
+      "selected_property_iris": [],
+      "selected_code_iris": [],
+      "alignments": []
+    },
+    {
+      "iri": "https://hilosemantics.com/IE515Submitdeclaration-1774611632509",
+      "namespace_prefix": "hilo",
+      "name": "IE515 Submit declaration ",
+      "description": "",
+      "version": "1.0",
+      "type": "data sharing event",
+      "parent_iri": "https://hilosemantics.com/Lodgingexportdeclaration-1774611561221",
+      "interaction_type": "collaborate",
+      "initiating_role": "",
+      "creator": "",
+      "creation_date": "",
+      "hierarchy_assoc_ids": [],
+      "selected_property_iris": [],
+      "selected_code_iris": [],
+      "alignments": []
+    }
+  ]
+}
