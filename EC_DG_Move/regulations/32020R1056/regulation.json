@@ -1,0 +1,28 @@
+{
+  "component_type": "regulation",
+  "exported_at": "2026-10-28T15:46:44.305Z",
+  "regulation": {
+    "celex_number": "32020R1056",
+    "identifier": "2020/1056",
+    "title": "Regulation (eu) 2020/1056 of the European Parliament and Council on electronic freight transport information (eFTI)",
+    "abstract": "Voluntary reporting",
+    "date_publication": "2020-07-31",
+    "date_entry_into_force": "2024-08-20",
+    "date_applicability": "2027-07-09",
+    "status": "In force",
+    "keywords": [
+      "eFTI (electronic Freight Transport Information)",
+      "digitization",
+      "transport policy"
+    ],
+    "legal_basis": [
+      "Article 91 TFEU"
+    ],
+    "policy_areas": [],
+    "related_acts": [],
+    "amends": [],
+    "repeals": [],
+    "distributions": [],
+    "landing_page": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32020R1056"
+  }
+}
